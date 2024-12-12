@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    background-color: #e7ecfa;
+    color: #521E7B;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #e7ecfa;
+    z-index: 1000;
+}
+
+.im_logo {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #521E7B;
+    border-radius: 25%;
+}
+
+.group {
+    text-align: end;
+}
+
+.fio {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.vk, .wp {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.wp {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+}
+
+p span {
+    text-decoration: underline;
+}
+
+.hero-section {
+    display: flex;
+}
+
+.hero-navigation {
+    width: 10%;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.line {
+    height: 100%;
+    border-left: 2px solid #C6D4FF;
+    margin-right: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#editor, #output {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+#editor {
+    height: 400px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+#output {
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.header, .hero-section, footer {
+    padding: 0 20px;
+}
+
+button {
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+    color: #521E7B;
+    background-color: #C6D4FF;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #b0c1f4;
+}
+
+nav ul li a:hover {
+    color: #b0c1f4;
+}
+
+@media (max-width: 768px) {
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-navigation {
+        width: 100%;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+
+    .fio {
+        position: relative;
+    }
+
+    .hero-navigation {
+        margin: 0 16px;
+    }
+}

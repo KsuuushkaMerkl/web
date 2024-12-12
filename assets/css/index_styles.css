@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    background-color: #e7ecfa;
+    color: #521E7B;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #e7ecfa;
+    z-index: 1000;
+}
+
+.im_logo {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #521E7B;
+    border-radius: 25%;
+}
+
+.group {
+    text-align: end;
+}
+
+.fio {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.vk, .wp {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.hero-hello {
+    display: flex;
+}
+
+.hero-hello img {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.wp {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+}
+
+p span {
+    text-decoration: underline;
+}
+
+ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.hero-section {
+    display: flex;
+    margin: 0 16px;
+}
+
+.hero-navigation {
+    width: 10%;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.hero-blog {
+    margin: 0 40px 20px;
+}
+
+.line {
+    height: 100%;
+    border-left: 2px solid #C6D4FF;
+    margin-right: 20px;
+}
+
+.header, .hero-section, footer {
+    padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+    .hero-navigation {
+        width: 20%;
+    }
+
+    .image {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-navigation {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .image {
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-navigation {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-hello {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-blog {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .hero-navigation {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+
+    .fio {
+        position: relative;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #521E7B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top.show {
+    display: block;
+}
+
+nav ul li a:active {
+    font-size: 22px;
+    color: #b0c1f4;
+}
+
+nav ul li a:hover {
+    color: #b0c1f4;
+}
+
+
